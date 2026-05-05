@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>قائمة المقهى</title>
+        <style>
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                gap:20px;
+                justify-content: space-evenly;
+                background: #e8d8c3;
+                padding: 20px 10px;
+            }
+            .card {
+                width:45%;
+                box-sizing: border-box;
+                background:  #ffffff;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+                transition: 0.3s;
+                border-radius:15px;
+                padding: 15px;
+            
+            }
+            .card img {
+                width: 100%;
+                height:140px;
+                object-fit: cover;
+                border-radius:10px;
+                margin-top:15px;
+            }
+            .card h2 {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .card p {
+                font-size: 14px;
+                color: #555; 
+            }
+            .card span {
+                font-weight: bold;
+                color: #8b5e3c;
+                margin-right: 10px;
+            }
+            .card a {
+                display: inline-block;
+                margin-top: 8px;
+                padding: 8px 14px;
+                background: #8b5e3c;
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                transition: 0.3s;
+                font-size: 14px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+            .card a:hover {
+                background: #a9744f;
+                transform: scale(1.06);
+                box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            }
+            .card:hover {
+                transform: translateY(-8px);
+            }
+            h1 {
+                text-align: center;
+                font-size: 42px;
+                color: black;
+                letter-spacing: 2px;
+            }
+            body {
+                background-color: #e8d8c3;
+                font-family: arial; 
+                margin: 0;
+            }
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                background: #f9f6f2; 
+                padding: 8px 0;
+                margin-bottom: 10px;
+            }
+            .icon {
+                width: 40px;
+                height: 40px;
+            }
+            .brand {
+                font-size: 18px;
+                color: gray;
+            }
+
+        </style>
+        </head>
+        <body>
+            <div class="header">
+                <img src="coffee.jpeg" class="icon">
+                <h1>Menu</h1>
+                <span class="brand">OSLO</span>
+            </div>
+
+            <div class="container">
+                 <div class="card drink">
+                    <h2>Cappuccino</h2>
+                    <p>قهوة بالحليب مع رغوة ناعمة</p>
+                    <span>50mru</span>
+                    <a href="#">اطلب الان</a>
+                    <img src="Cappuccino.jpeg">
+                    </div>
+                       <div class="card drink">
+                        <h2>Espresso</h2>
+                        <p>strong coffee</p>
+                        <span>30mru</span>
+                        <a href="#">اطلب الان</a>
+                        <img src="Espresso.jpeg">
+                    </div>
+                    <div class="card dessert">
+                        <h2>Muffin</h2>
+                        <p>مافن شكولاتة طري ولذيذ</p>
+                        <span>50mru</span>
+                        <a href="#">اطلب الان</a>
+                        <img src="Muffin.jpeg">
+                    </div>
+                    <div class="card desser">
+                        <h2>pancake</h2>
+                        <p>بان كيك طري وخفيف مع صوص الشوكولاتة</p>
+                        <span>100mru</span>
+                        <a href="#">اطلب الان</a>
+                        <img src="Pancakes.jpeg">
+                    </div>
+                    <div class="card vip">
+                        <h2>Japanese cheesecake</h2>
+                        <p>تشيز كيك ياباني خفيف وهش بقوام ناعم</p>
+                        <span>180mru</span>
+                        <a href="#">اطلب الان</a>
+                        <img src="Cheesecake.jpeg">
+                    </div>
+                    <div class="card dessert">
+                        <h2>Chocolate & Banana Crep</h2>
+                        <p>كريب طري بحشوة شكولاتة وموز طازج</p>
+                        <span>150mru</span>
+                        <a href="#">اطلب الان</a>
+                        <img src="Crepe.jpeg">
+                    </div>
+                    </div>
+        </body>
+        </html>
